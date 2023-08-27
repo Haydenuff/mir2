@@ -35,6 +35,7 @@ namespace Launcher
             Res3_pb.Image = Client.Resources.Images.Radio_Unactive;
             Res4_pb.Image = Client.Resources.Images.Radio_Unactive;
             Res5_pb.Image = Client.Resources.Images.Radio_Unactive;
+            Res6_pb.Image = Client.Resources.Images.Radio_Unactive;
 
             switch (res)
             {
@@ -49,6 +50,9 @@ namespace Launcher
                     break;
                 case eSupportedResolution.w1920h1080:
                     Res5_pb.Image = Client.Resources.Images.Config_Radio_On;
+                    break;
+                case eSupportedResolution.w2560h1440:
+                    Res6_pb.Image = Client.Resources.Images.Config_Radio_On;
                     break;
 
             }
@@ -206,6 +210,11 @@ namespace Launcher
             resolutionChoice(eSupportedResolution.w1920h1080);
         }
 
+        private void Res6_pb_Click(object sender, EventArgs e)
+        {
+            resolutionChoice(eSupportedResolution.w2560h1440);
+        }
+
         private void DrawSupportedResolutions()
         {
             Res2_pb.Enabled = false;
@@ -216,6 +225,8 @@ namespace Launcher
             label3.ForeColor = Color.Red;
             Res5_pb.Enabled = false;
             label1.ForeColor = Color.Red;
+            Res6_pb.Enabled = false;
+            label6.ForeColor = Color.Red;
 
             foreach (eSupportedResolution supportedResolution in DisplayResolutions.DisplaySupportedResolutions)
             {
@@ -236,6 +247,10 @@ namespace Launcher
                     case (eSupportedResolution.w1920h1080):
                         Res5_pb.Enabled = true;
                         label1.ForeColor = Color.Gray;
+                        break;
+                    case (eSupportedResolution.w2560h1440):
+                        Res6_pb.Enabled = true;
+                        label6.ForeColor = Color.Gray;
                         break;
                 }
             }

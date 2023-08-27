@@ -55,6 +55,8 @@
             this.Res4_pb = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Res5_pb = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Res6_pb = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Res3_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Res2_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AutoStart_pb)).BeginInit();
@@ -65,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Res4_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Res5_pb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Res6_pb)).BeginInit();
             this.SuspendLayout();
             // 
             // AccountLogin_txt
@@ -417,6 +420,30 @@
             this.Res5_pb.TabStop = false;
             this.Res5_pb.Click += new System.EventHandler(this.Res5_pb_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(178, 141);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "2560x1440";
+            // 
+            // Res6_pb
+            // 
+            this.Res6_pb.Image = global::Client.Resources.Images.Radio_Unactive;
+            this.Res6_pb.Location = new System.Drawing.Point(157, 141);
+            this.Res6_pb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Res6_pb.Name = "Res6_pb";
+            this.Res6_pb.Size = new System.Drawing.Size(12, 12);
+            this.Res6_pb.TabIndex = 30;
+            this.Res6_pb.TabStop = false;
+            this.Res6_pb.Click += new System.EventHandler(this.Res6_pb_Click);
+            // 
             // Config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -427,6 +454,8 @@
             this.ClientSize = new System.Drawing.Size(257, 315);
             this.Controls.Add(this.Res5_pb);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.Res6_pb);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Res4_pb);
             this.Controls.Add(this.label12);
@@ -476,6 +505,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Res4_pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Res5_pb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Res6_pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +540,7 @@
         private System.Windows.Forms.PictureBox Res4_pb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Res5_pb;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox Res6_pb;
     }
 }

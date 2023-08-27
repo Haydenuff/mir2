@@ -74,7 +74,7 @@ namespace Client
 
         public static bool FPSCap = true;
         public static int MaxFPS = 100;
-        public static int Resolution = 1024;
+        public static int Resolution = 1920;
         public static bool DebugMode = false;
 
         //Network

@@ -80,7 +80,7 @@ namespace Server
                            AllowCreateAssassin = true,
                            AllowCreateArcher = true;
 
-        public static int AllowedResolution = 1024;
+        public static int AllowedResolution = 2560;
 
         //Optional
         public static bool SafeZoneBorder = false,
